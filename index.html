@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="Style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeira tela</title>
+  </head>
+
+  <body>
+    <div class="Scada">
+      <div class="Header"></div>
+
+      <div class="C_Inferior">
+        <div class="Menu">
+          <button class="Btn_Menu" onclick="MudarTela('TelaForjaria')">
+            FORJARIA
+          </button>
+          <button class="Btn_Menu" onclick="MudarTela('TelaUsinagem')">
+            USINAGEM
+          </button>
+          <button class="Btn_Menu" onclick="MudarTela('TelaMontagem')">
+            MONTAGEM
+          </button>
+          <button class="Btn_Menu" onclick="MudarTela('TelaPintura')">
+            PINTURA
+          </button>
+        </div>
+        <div class="Conteudo">
+          <div id="TelaForjaria" class="Tela Ativa">
+            <h2>FORJARIA</h2>
+          </div>
+          <div id="TelaUsinagem" class="Tela">
+            <h2>USINAGEM</h2>
+          </div>
+          <div id="TelaMontagem" class="Tela">
+            <h2>MONTAGEM</h2>
+          </div>
+          <div id="TelaPintura" class="Tela">
+            <h2>PINTURA</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.Tela h2{
+color: #e0e0e0;
+background-color:  #1f3b57;
+text-align: center;   /* Alinha o texto exatamente no centro horizontal */
+padding: 10px;
+border-radius: 15px 15px 0 0;  
+}
+
+.Scada /* Container primario, tela de fundo */ {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+}
+
+.Header /* Cabeçalho */ {
+  
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid black; /* Adicione esta linha exata */
+}
+
+.C_Inferior/* Container inferior - Menu e conteudo */ {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.Menu /* Menu lateral esquerdo */ {
+  
+  width: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; /* Empilha os botões verticalmente */
+  gap: 10px; /* Espaçamento entre um botão e outro */
+  padding: 10px; /* Afasta os botões das bordas internas do menu */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho do menu */
+  border: 1px solid black; /* Adicione esta linha exata */
+}
+
+
+.Conteudo /* Conteudo tela principal */ {
+  flex: 1;
+  border-radius: 15px;
+  border: 1px solid black; /* Adicione esta linha exata */
+ 
+}
+
+.Btn_Menu {
+  background-color: #1f3b57;
+  border-radius: 10%;
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 12px 8px;
+  
+}
+/* Efeito ao passar o mouse por cima do botão */
+.Btn_Menu:hover {
+    background-color: #1A1A1A; /* Escurece o botão ao passar o mouse */
+}
+
+.Tela{
+
+  display: none;
+  
+}
+
+.Tela.Ativa{
+
+  display: block;
+
+}
